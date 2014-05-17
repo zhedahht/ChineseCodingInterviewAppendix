@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EntryNodeInListLoop", "Entr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NextNodeInBinaryTrees", "NextNodeInBinaryTrees\NextNodeInBinaryTrees.vcxproj", "{8CF39E25-265A-4D79-B63C-E3F646643D10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringPathInMatrix", "StringPathInMatrix\StringPathInMatrix.vcxproj", "{1D4BD3F4-AC32-4B45-B6A5-927EE8757E89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,6 +57,10 @@ Global
 		{8CF39E25-265A-4D79-B63C-E3F646643D10}.Debug|Win32.Build.0 = Debug|Win32
 		{8CF39E25-265A-4D79-B63C-E3F646643D10}.Release|Win32.ActiveCfg = Release|Win32
 		{8CF39E25-265A-4D79-B63C-E3F646643D10}.Release|Win32.Build.0 = Release|Win32
+		{1D4BD3F4-AC32-4B45-B6A5-927EE8757E89}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D4BD3F4-AC32-4B45-B6A5-927EE8757E89}.Debug|Win32.Build.0 = Debug|Win32
+		{1D4BD3F4-AC32-4B45-B6A5-927EE8757E89}.Release|Win32.ActiveCfg = Release|Win32
+		{1D4BD3F4-AC32-4B45-B6A5-927EE8757E89}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
