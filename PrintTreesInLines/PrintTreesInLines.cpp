@@ -1,3 +1,9 @@
+/* 
+ * Question Description:
+ * (Question 58 in <Coding Intervies>) How do you print a binary tree by level, in top down order, 
+ * with each level in a line? Nodes in a level should be printed from left to right. 
+*/
+
 #include <stdio.h>
 #include "..\Utilities\BinaryTree.h"
 #include <queue>
