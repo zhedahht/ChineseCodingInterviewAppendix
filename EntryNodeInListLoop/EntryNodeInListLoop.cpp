@@ -1,6 +1,7 @@
 /* 
  * Question Description:
- * (Question 16 in <Coding Intervies>) How do you check whether there is a loop in a linked list?
+ * (Question 17 in <Coding Intervies>) If there is a loop in a linked list, how do you get the entry node of the loop? 
+ * The entry node is the first node in the loop from the head of a list.
 */
 
 #include <stdio.h>
