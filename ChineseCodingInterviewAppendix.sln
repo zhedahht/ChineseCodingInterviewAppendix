@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringPathInMatrix", "Strin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotMove", "RobotMove\RobotMove.vcxproj", "{23720702-0117-4D66-9E67-2A609E28C083}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoinChanges", "CoinChanges\CoinChanges.vcxproj", "{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -67,6 +69,10 @@ Global
 		{23720702-0117-4D66-9E67-2A609E28C083}.Debug|Win32.Build.0 = Debug|Win32
 		{23720702-0117-4D66-9E67-2A609E28C083}.Release|Win32.ActiveCfg = Release|Win32
 		{23720702-0117-4D66-9E67-2A609E28C083}.Release|Win32.Build.0 = Release|Win32
+		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Debug|Win32.Build.0 = Debug|Win32
+		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Release|Win32.ActiveCfg = Release|Win32
+		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
