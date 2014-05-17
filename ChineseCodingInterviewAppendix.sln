@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoinChanges", "CoinChanges\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeleteDuplicatedListNode", "DeleteDuplicatedListNode\DeleteDuplicatedListNode.vcxproj", "{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SymmetricalBinaryTree", "SymmetricalBinaryTree\SymmetricalBinaryTree.vcxproj", "{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -79,6 +81,10 @@ Global
 		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Debug|Win32.Build.0 = Debug|Win32
 		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Release|Win32.ActiveCfg = Release|Win32
 		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Release|Win32.Build.0 = Release|Win32
+		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Debug|Win32.Build.0 = Debug|Win32
+		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Release|Win32.ActiveCfg = Release|Win32
+		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
