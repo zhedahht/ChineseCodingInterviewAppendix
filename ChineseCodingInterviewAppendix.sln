@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotMove", "RobotMove\Robo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoinChanges", "CoinChanges\CoinChanges.vcxproj", "{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeleteDuplicatedListNode", "DeleteDuplicatedListNode\DeleteDuplicatedListNode.vcxproj", "{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -73,6 +75,10 @@ Global
 		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Debug|Win32.Build.0 = Debug|Win32
 		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Release|Win32.ActiveCfg = Release|Win32
 		{6AB5F5A7-A4A4-4D0B-8BB5-AF38351100C1}.Release|Win32.Build.0 = Release|Win32
+		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Debug|Win32.Build.0 = Debug|Win32
+		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Release|Win32.ActiveCfg = Release|Win32
+		{1B65A9BE-BEC6-48D1-A2DD-CEA2A83D63DB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
