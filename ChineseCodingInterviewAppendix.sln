@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeleteDuplicatedListNode", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SymmetricalBinaryTree", "SymmetricalBinaryTree\SymmetricalBinaryTree.vcxproj", "{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintTreesInLines", "PrintTreesInLines\PrintTreesInLines.vcxproj", "{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -85,6 +87,10 @@ Global
 		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Debug|Win32.Build.0 = Debug|Win32
 		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Release|Win32.ActiveCfg = Release|Win32
 		{BCEB5FAA-BDD6-4B80-8D29-34418F900EAB}.Release|Win32.Build.0 = Release|Win32
+		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Debug|Win32.Build.0 = Debug|Win32
+		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Release|Win32.ActiveCfg = Release|Win32
+		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
