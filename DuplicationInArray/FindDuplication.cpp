@@ -6,6 +6,7 @@
  * For example, if an array of length 7 contains the numbers {2, 3, 1, 0, 2, 5, 3}, 
  * the implemented function (or method) should return either 2 or 3
 */
+
 #include <stdio.h>
 
 // Parameters:
