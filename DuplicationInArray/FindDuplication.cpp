@@ -1,3 +1,11 @@
+/* 
+ * Question Description:
+ * (Question 6 in <Coding Intervies>) An array contains n numbers ranging from 0 to n-1. 
+ * There are some numbers duplicated in the array. It is not clear how many numbers are duplicated or 
+ * how many times a number gets duplicated. How do you find a duplicated number in the array? 
+ * For example, if an array of length 7 contains the numbers {2, 3, 1, 0, 2, 5, 3}, 
+ * the implemented function (or method) should return either 2 or 3
+*/
 #include <stdio.h>
 
 // Parameters:
