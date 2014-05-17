@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SymmetricalBinaryTree", "Sy
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintTreesInLines", "PrintTreesInLines\PrintTreesInLines.vcxproj", "{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintTreesInZigzag", "PrintTreesInZigzag\PrintTreesInZigzag.vcxproj", "{928E5522-02BB-493A-9F1A-EC25F285F833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -91,6 +93,10 @@ Global
 		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Debug|Win32.Build.0 = Debug|Win32
 		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Release|Win32.ActiveCfg = Release|Win32
 		{B1DB40C3-7E7D-4FFB-AEE3-921E39118606}.Release|Win32.Build.0 = Release|Win32
+		{928E5522-02BB-493A-9F1A-EC25F285F833}.Debug|Win32.ActiveCfg = Debug|Win32
+		{928E5522-02BB-493A-9F1A-EC25F285F833}.Debug|Win32.Build.0 = Debug|Win32
+		{928E5522-02BB-493A-9F1A-EC25F285F833}.Release|Win32.ActiveCfg = Release|Win32
+		{928E5522-02BB-493A-9F1A-EC25F285F833}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
