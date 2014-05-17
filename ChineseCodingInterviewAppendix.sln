@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuplicationInArray", "DuplicationInArray\DuplicationInArray.vcxproj", "{3DD5DB6F-68FB-4999-94D5-F4637AB8D8C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegularExpressionsMatching", "RegularExpressionsMatching\RegularExpressionsMatching.vcxproj", "{3B6BF857-6BF9-42C0-9EF2-2898B7633AE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{3DD5DB6F-68FB-4999-94D5-F4637AB8D8C2}.Debug|Win32.Build.0 = Debug|Win32
 		{3DD5DB6F-68FB-4999-94D5-F4637AB8D8C2}.Release|Win32.ActiveCfg = Release|Win32
 		{3DD5DB6F-68FB-4999-94D5-F4637AB8D8C2}.Release|Win32.Build.0 = Release|Win32
+		{3B6BF857-6BF9-42C0-9EF2-2898B7633AE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B6BF857-6BF9-42C0-9EF2-2898B7633AE7}.Debug|Win32.Build.0 = Debug|Win32
+		{3B6BF857-6BF9-42C0-9EF2-2898B7633AE7}.Release|Win32.ActiveCfg = Release|Win32
+		{3B6BF857-6BF9-42C0-9EF2-2898B7633AE7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
