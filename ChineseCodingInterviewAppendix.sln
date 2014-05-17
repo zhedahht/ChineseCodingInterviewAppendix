@@ -37,6 +37,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SerializeBinaryTrees", "Ser
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StreamMedian", "StreamMedian\StreamMedian.vcxproj", "{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstCharacterInStream", "FirstCharacterInStream\FirstCharacterInStream.vcxproj", "{9E019D4C-5994-40CB-8052-913877A45369}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KthNodeInBST", "KthNodeInBST\KthNodeInBST.vcxproj", "{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -103,8 +107,19 @@ Global
 		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Debug|Win32.Build.0 = Debug|Win32
 		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Release|Win32.ActiveCfg = Release|Win32
 		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Release|Win32.Build.0 = Release|Win32
+		{9E019D4C-5994-40CB-8052-913877A45369}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E019D4C-5994-40CB-8052-913877A45369}.Debug|Win32.Build.0 = Debug|Win32
+		{9E019D4C-5994-40CB-8052-913877A45369}.Release|Win32.ActiveCfg = Release|Win32
+		{9E019D4C-5994-40CB-8052-913877A45369}.Release|Win32.Build.0 = Release|Win32
+		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Debug|Win32.Build.0 = Debug|Win32
+		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Release|Win32.ActiveCfg = Release|Win32
+		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal
