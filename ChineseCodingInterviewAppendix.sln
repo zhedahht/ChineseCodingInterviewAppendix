@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstCharacterInStream", "F
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KthNodeInBST", "KthNodeInBST\KthNodeInBST.vcxproj", "{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaxInSlidingWindow", "MaxInSlidingWindow\MaxInSlidingWindow.vcxproj", "{0720198D-FE39-49EF-9560-2E8FA9D7F570}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -115,6 +117,10 @@ Global
 		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Debug|Win32.Build.0 = Debug|Win32
 		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Release|Win32.ActiveCfg = Release|Win32
 		{0DE35C6F-B24D-4F43-9E4B-EE75EDB10953}.Release|Win32.Build.0 = Release|Win32
+		{0720198D-FE39-49EF-9560-2E8FA9D7F570}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0720198D-FE39-49EF-9560-2E8FA9D7F570}.Debug|Win32.Build.0 = Debug|Win32
+		{0720198D-FE39-49EF-9560-2E8FA9D7F570}.Release|Win32.ActiveCfg = Release|Win32
+		{0720198D-FE39-49EF-9560-2E8FA9D7F570}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
