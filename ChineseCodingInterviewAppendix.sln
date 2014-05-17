@@ -14,6 +14,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopInList", "LoopInList\Lo
 		{715E6A55-16B3-4F05-9286-6DBC78DA51E4} = {715E6A55-16B3-4F05-9286-6DBC78DA51E4}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EntryNodeInListLoop", "EntryNodeInListLoop\EntryNodeInListLoop.vcxproj", "{C79451B8-68DD-4932-9F33-15747F317610}"
+	ProjectSection(ProjectDependencies) = postProject
+		{715E6A55-16B3-4F05-9286-6DBC78DA51E4} = {715E6A55-16B3-4F05-9286-6DBC78DA51E4}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -40,6 +45,10 @@ Global
 		{3DA97352-BF91-4D00-8062-6C8BEE853ADD}.Debug|Win32.Build.0 = Debug|Win32
 		{3DA97352-BF91-4D00-8062-6C8BEE853ADD}.Release|Win32.ActiveCfg = Release|Win32
 		{3DA97352-BF91-4D00-8062-6C8BEE853ADD}.Release|Win32.Build.0 = Release|Win32
+		{C79451B8-68DD-4932-9F33-15747F317610}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C79451B8-68DD-4932-9F33-15747F317610}.Debug|Win32.Build.0 = Debug|Win32
+		{C79451B8-68DD-4932-9F33-15747F317610}.Release|Win32.ActiveCfg = Release|Win32
+		{C79451B8-68DD-4932-9F33-15747F317610}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
