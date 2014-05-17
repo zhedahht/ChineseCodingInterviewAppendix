@@ -41,7 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>D:\temp\CodingInterviewBin\$(ProjectName)\</OutDir>
+    <OutDir>D:\temp\CodingInterviewBin\</OutDir>
     <IntDir>D:\temp\CodingInterviewBin\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
