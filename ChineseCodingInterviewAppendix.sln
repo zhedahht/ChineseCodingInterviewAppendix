@@ -35,6 +35,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintTreesInLines", "PrintT
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintTreesInZigzag", "PrintTreesInZigzag\PrintTreesInZigzag.vcxproj", "{928E5522-02BB-493A-9F1A-EC25F285F833}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SerializeBinaryTrees", "SerializeBinaryTrees\SerializeBinaryTrees.vcxproj", "{B9DB5738-C69C-4B80-9070-FF36B1E6F772}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StreamMedian", "StreamMedian\StreamMedian.vcxproj", "{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -97,6 +101,14 @@ Global
 		{928E5522-02BB-493A-9F1A-EC25F285F833}.Debug|Win32.Build.0 = Debug|Win32
 		{928E5522-02BB-493A-9F1A-EC25F285F833}.Release|Win32.ActiveCfg = Release|Win32
 		{928E5522-02BB-493A-9F1A-EC25F285F833}.Release|Win32.Build.0 = Release|Win32
+		{B9DB5738-C69C-4B80-9070-FF36B1E6F772}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B9DB5738-C69C-4B80-9070-FF36B1E6F772}.Debug|Win32.Build.0 = Debug|Win32
+		{B9DB5738-C69C-4B80-9070-FF36B1E6F772}.Release|Win32.ActiveCfg = Release|Win32
+		{B9DB5738-C69C-4B80-9070-FF36B1E6F772}.Release|Win32.Build.0 = Release|Win32
+		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Debug|Win32.Build.0 = Debug|Win32
+		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Release|Win32.ActiveCfg = Release|Win32
+		{F85D00AB-0A01-4BB7-9BD9-E7786A9517CA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
