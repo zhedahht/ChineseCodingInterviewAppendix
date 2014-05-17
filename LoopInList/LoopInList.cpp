@@ -1,3 +1,8 @@
+/* 
+ * Question Description:
+ * (Question 16 in <Coding Intervies>) How do you check whether there is a loop in a linked list?
+*/
+
 #include <stdio.h>
 #include "../Utilities/list.h"
 
