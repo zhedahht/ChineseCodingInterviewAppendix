@@ -11,38 +11,38 @@
 
 bool matchCore(char* string, char* pattern);
 
-bool match(char* string, char* pattern)
+bool match(char* str, char* pattern)
 {
-    if(string == NULL || pattern == NULL)
+    if(str == NULL || pattern == NULL)
         return false;
 
-    return matchCore(string, pattern);
+    return matchCore(str, pattern);
 }
 
-bool matchCore(char* string, char* pattern)
+bool matchCore(char* str, char* pattern)
 {
-    if(*string == '\0' && *pattern == '\0')
+    if(*str == '\0' && *pattern == '\0')
         return true;
 
-    if(*string != '\0' && *pattern == '\0')
+    if(*str != '\0' && *pattern == '\0')
         return false;
 
     if(*(pattern + 1) == '*') 
     {
-        if(*pattern == *string || (*pattern == '.' && *string != '\0'))
+        if(*pattern == *str || (*pattern == '.' && *str != '\0'))
                    // move on the next state
-            return matchCore(string + 1, pattern + 2)
+            return matchCore(str + 1, pattern + 2)
                    // stay on the current state 
-                || matchCore(string + 1, pattern)
+                || matchCore(str + 1, pattern)
                    // ignore a '*' 
-                || matchCore(string, pattern + 2);
+                || matchCore(str, pattern + 2);
         else
                    // ignore a '*'
-            return matchCore(string, pattern + 2);
+            return matchCore(str, pattern + 2);
     }
 
-    if(*string == *pattern || (*pattern == '.' && *string != '\0'))
-        return matchCore(string + 1, pattern + 1);
+    if(*str == *pattern || (*pattern == '.' && *str != '\0'))
+        return matchCore(str + 1, pattern + 1);
 
     return false;
 }
