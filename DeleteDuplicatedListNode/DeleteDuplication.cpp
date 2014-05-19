@@ -29,15 +29,15 @@ void deleteDuplication(ListNode** pHead)
         else
         {
             int value = pNode->m_nValue;    
-            ListNode* pToBeDeleted = pNode;
-            while(pToBeDeleted != NULL && pToBeDeleted->m_nValue == value)
+            ListNode* pToBeDel = pNode;
+            while(pToBeDel != NULL && pToBeDel->m_nValue == value)
             {
-                pNext = pToBeDeleted->m_pNext;
+                pNext = pToBeDel->m_pNext;
                 
-                delete pToBeDeleted;
-                pToBeDeleted = NULL;
+                delete pToBeDel;
+                pToBeDel = NULL;
                 
-                pToBeDeleted = pNext;
+                pToBeDel = pNext;
             }
             
             if(pPreNode == NULL)
