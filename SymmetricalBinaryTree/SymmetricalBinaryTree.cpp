@@ -223,6 +223,68 @@ void Test8()
     Test("Test8", NULL, true);
 }
 
+// All nodes have the same value
+//               5
+//              / \
+//             5   5
+//            /     \
+//           5       5
+//          /         \
+//         5           5
+void Test9()
+{
+    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode21 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode22 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode31 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode32 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode41 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode42 = CreateBinaryTreeNode(5);
+
+    ConnectTreeNodes(pNode1, pNode21, pNode22);
+    ConnectTreeNodes(pNode21, pNode31, NULL);
+    ConnectTreeNodes(pNode22, NULL, pNode32);
+    ConnectTreeNodes(pNode31, pNode41, NULL);
+    ConnectTreeNodes(pNode32, NULL, pNode42);
+    ConnectTreeNodes(pNode41, NULL, NULL);
+    ConnectTreeNodes(pNode42, NULL, NULL);
+
+    Test("Test9", pNode1, true);
+
+    DestroyTree(pNode1);
+}
+
+// All nodes have the same value
+//               5
+//              / \
+//             5   5
+//            /     \
+//           5       5
+//          /       /
+//         5       5
+void Test10()
+{
+    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode21 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode22 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode31 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode32 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode41 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode42 = CreateBinaryTreeNode(5);
+
+    ConnectTreeNodes(pNode1, pNode21, pNode22);
+    ConnectTreeNodes(pNode21, pNode31, NULL);
+    ConnectTreeNodes(pNode22, NULL, pNode32);
+    ConnectTreeNodes(pNode31, pNode41, NULL);
+    ConnectTreeNodes(pNode32, pNode42, NULL);
+    ConnectTreeNodes(pNode41, NULL, NULL);
+    ConnectTreeNodes(pNode42, NULL, NULL);
+
+    Test("Test10", pNode1, false);
+
+    DestroyTree(pNode1);
+}
+
 void main(int argc, char* argv[])
 {
     Test1();
@@ -233,4 +295,6 @@ void main(int argc, char* argv[])
     Test6();
     Test7();
     Test8();
+    Test9();
+    Test10();
 }
