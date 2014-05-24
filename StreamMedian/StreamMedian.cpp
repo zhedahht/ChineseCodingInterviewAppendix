@@ -17,58 +17,58 @@ template<typename T> class DynamicArray
 public:
     void Insert(T num)
     {
-        if(((minHeap.size() + maxHeap.size()) & 1) == 0)
+        if(((min.size() + max.size()) & 1) == 0)
         {
-            if(maxHeap.size() > 0 && num < maxHeap[0])
+            if(max.size() > 0 && num < max[0])
             {
-                maxHeap.push_back(num);
-                push_heap(maxHeap.begin(), maxHeap.end(), less<T>());
+                max.push_back(num);
+                push_heap(max.begin(), max.end(), less<T>());
 
-                num = maxHeap[0];
+                num = max[0];
 
-                pop_heap(maxHeap.begin(), maxHeap.end(), less<T>());
-                maxHeap.pop_back();
+                pop_heap(max.begin(), max.end(), less<T>());
+                max.pop_back();
             }
 
-            minHeap.push_back(num);
-            push_heap(minHeap.begin(), minHeap.end(), greater<T>());
+            min.push_back(num);
+            push_heap(min.begin(), min.end(), greater<T>());
         }
         else
         {
-            if(minHeap.size() > 0 && minHeap[0] < num)
+            if(min.size() > 0 && min[0] < num)
             {
-                minHeap.push_back(num);
-                push_heap(minHeap.begin(), minHeap.end(), greater<T>());
+                min.push_back(num);
+                push_heap(min.begin(), min.end(), greater<T>());
 
-                num = minHeap[0];
+                num = min[0];
 
-                pop_heap(minHeap.begin(), minHeap.end(), greater<T>());
-                minHeap.pop_back();
+                pop_heap(min.begin(), min.end(), greater<T>());
+                min.pop_back();
             }
 
-            maxHeap.push_back(num);
-            push_heap(maxHeap.begin(), maxHeap.end(), less<T>());
+            max.push_back(num);
+            push_heap(max.begin(), max.end(), less<T>());
         }
     }
 
     T GetMedian()
     { 
-        int size = minHeap.size() + maxHeap.size();
+        int size = min.size() + max.size();
         if(size == 0)
             throw exception("No numbers are available");
 
         T median = 0;
         if((size & 1) == 1)
-            median = minHeap[0];
+            median = min[0];
         else
-            median = (minHeap[0] + maxHeap[0]) / 2;
+            median = (min[0] + max[0]) / 2;
 
         return median;
     }
 
 private:
-    vector<T> minHeap;
-    vector<T> maxHeap;
+    vector<T> min;
+    vector<T> max;
 };
 
 // ==================== Test Code ====================

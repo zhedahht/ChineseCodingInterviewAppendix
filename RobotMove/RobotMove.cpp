@@ -36,10 +36,14 @@ int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* v
     {
         visited[row * cols + col] = true;
     
-        count = 1 + movingCountCore(threshold, rows, cols, row - 1, col, visited)
-                + movingCountCore(threshold, rows, cols, row, col - 1, visited)
-                + movingCountCore(threshold, rows, cols, row + 1, col, visited)
-                + movingCountCore(threshold, rows, cols, row, col + 1, visited);
+        count = 1 + movingCountCore(threshold, rows, cols, 
+                    row - 1, col, visited)
+                + movingCountCore(threshold, rows, cols, 
+                    row, col - 1, visited)
+                + movingCountCore(threshold, rows, cols, 
+                    row + 1, col, visited)
+                + movingCountCore(threshold, rows, cols, 
+                    row, col + 1, visited);
     }
     
     return count;
@@ -51,7 +55,8 @@ int movingCount(int threshold, int rows, int cols)
     for(int i = 0; i < rows * cols; ++i)
         visited[i] = false;
         
-    int count = movingCountCore(threshold, rows, cols, 0, 0, visited);
+    int count = movingCountCore(threshold, rows, cols, 
+                    0, 0, visited);
     
     delete[] visited;
     

@@ -199,6 +199,38 @@ void Test5()
     Test("Test5", NULL);
 }
 
+//        5
+//         5
+//          5
+//         5
+//        5
+//       5 5
+//      5   5
+void Test6()
+{
+    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode61 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode62 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode71 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* pNode72 = CreateBinaryTreeNode(5);
+
+    ConnectTreeNodes(pNode1, NULL, pNode2);
+    ConnectTreeNodes(pNode2, NULL, pNode3);
+    ConnectTreeNodes(pNode3, pNode4, NULL);
+    ConnectTreeNodes(pNode4, pNode5, NULL);
+    ConnectTreeNodes(pNode5, pNode61, pNode62);
+    ConnectTreeNodes(pNode61, pNode71, NULL);
+    ConnectTreeNodes(pNode62, NULL, pNode72);
+
+    Test("Test6", pNode1);
+
+    DestroyTree(pNode1);
+}
+
 int main(int argc, char* argv[])
 {
     Test1();
@@ -206,6 +238,7 @@ int main(int argc, char* argv[])
     Test3();
     Test4();
     Test5();
+    Test6();
 
     return 0;
 }
