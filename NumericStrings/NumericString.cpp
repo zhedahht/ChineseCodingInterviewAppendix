@@ -7,52 +7,39 @@
 
 #include <stdio.h>
 
-bool scanDigits(char** str);
-bool isExponential(char** str);
+bool scanUnsignedInteger(const char** str);
+bool scanInteger(const char** str);
 
-bool isNumeric(char* str)
+// the form of exponent is like A[.[B]][e|EC] or .B[e|EC]
+// where A and C is an integer with or without sign, and B is an unsigned integer
+bool isNumeric(const char* str)
 {
     if (str == NULL)
         return false;
 
-    if (*str == '+' || *str == '-')
+    bool numeric = scanInteger(&str);
+
+    // for floats
+    // you can have no integer part such as .123 means 0.123
+    // in the meanwhile, you can have no decimal part such as 233. means 233.0
+    // what's more, 233.666 is OK also.
+    if (*str == '.') {
         ++str;
-    if (*str == '\0')
-        return false;
+        numeric = scanUnsignedInteger(&str) || numeric;
+    }
 
-    bool numeric = true;
-
-    bool hasDigits = scanDigits(&str);
-    if (*str != '\0')
-    {
-        // for floats
-        if (*str == '.')
-        {
-            ++str;
-            if (*str == 'e' || *str == 'E')
-                return false;
-            if (!hasDigits && *str == '\0')
-                return false;
-
-            scanDigits(&str);
-
-            if (*str == 'e' || *str == 'E')
-                numeric = isExponential(&str);
-        }
-        // for integers
-        else if (*str == 'e' || *str == 'E')
-            numeric = isExponential(&str);
-        else
-            numeric = false;
+    // for exponent
+    if (*str == 'e' || *str == 'E') {
+        ++str;
+        numeric = scanInteger(&str) && numeric;
     }
 
     return numeric && *str == '\0';
 }
 
-bool scanDigits(char** str)
+bool scanUnsignedInteger(const char** str)
 {
-    char* pBefore = *str;
-
+    const char* pBefore = *str;
     while (**str != '\0' && **str >= '0' && **str <= '9')
         ++(*str);
 
@@ -60,25 +47,17 @@ bool scanDigits(char** str)
     return *str > pBefore;
 }
 
-bool isExponential(char** str)
+// an integer's form is like [+|-]B, where B is an unsigned integer
+bool scanInteger(const char** str)
 {
-    if (**str != 'e' && **str != 'E')
-        return false;
-
-    ++(*str);
     if (**str == '+' || **str == '-')
         ++(*str);
-
-    if (**str == '\0')
-        return false;
-
-    scanDigits(str);
-    return (**str == '\0') ? true : false;
+    return scanUnsignedInteger(str);
 }
 
 // ==================== Test Code ====================
 
-void Test(char* testName, char* str, bool expected)
+void Test(const char* testName, const char* str, bool expected)
 {
     if (testName != NULL)
         printf("%s begins: ", testName);
@@ -88,6 +67,7 @@ void Test(char* testName, char* str, bool expected)
     else
         printf("FAILED.\n");
 }
+
 
 int main(int argc, char* argv[])
 {
